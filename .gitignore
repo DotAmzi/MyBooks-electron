@@ -1,0 +1,13 @@
+# PHP
+/MyBooks/node_modules
+/MyBooks/public/hot
+/MyBooks/public/storage
+/MyBooks/storage/*.key
+/MyBooks/vendor
+/MyBooks/.env
+/MyBooks/.env.backup
+/MyBooks/.phpunit.result.cache
+/MyBooks/Homestead.json
+/MyBooks/Homestead.yaml
+/MyBooks/npm-debug.log
+/MyBooks/yarn-error.log
