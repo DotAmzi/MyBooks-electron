@@ -1,13 +1,13 @@
 # PHP
-/MyBooks/node_modules
-/MyBooks/public/hot
-/MyBooks/public/storage
-/MyBooks/storage/*.key
-/MyBooks/vendor
-/MyBooks/.env
-/MyBooks/.env.backup
-/MyBooks/.phpunit.result.cache
-/MyBooks/Homestead.json
-/MyBooks/Homestead.yaml
-/MyBooks/npm-debug.log
-/MyBooks/yarn-error.log
+/MyBooks-Backend/node_modules
+/MyBooks-Backend/public/hot
+/MyBooks-Backend/public/storage
+/MyBooks-Backend/storage/*.key
+/MyBooks-Backend/vendor
+/MyBooks-Backend/.env
+/MyBooks-Backend/.env.backup
+/MyBooks-Backend/.phpunit.result.cache
+/MyBooks-Backend/Homestead.json
+/MyBooks-Backend/Homestead.yaml
+/MyBooks-Backend/npm-debug.log
+/MyBooks-Backend/yarn-error.log
