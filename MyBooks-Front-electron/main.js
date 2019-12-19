@@ -54,7 +54,7 @@ function createWindow() {
                 {
                     label: 'List',
                     click: function () {
-                        win.loadURL("file:" + __dirname + "/dist/index.html#/publishers/new");
+                        win.loadURL("file:" + __dirname + "/dist/index.html#/publishers/list");
                     }
                 }
             ]
@@ -79,7 +79,7 @@ function createWindow() {
         protocol: 'file:',
         slashes: true
     }));
-    win.webContents.openDevTools();
+    // win.webContents.openDevTools();
     win.on('closed', function () {
         win = null;
     });

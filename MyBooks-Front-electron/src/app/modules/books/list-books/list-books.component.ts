@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {BooksService} from '../books.service';
+import {ipcRenderer} from 'electron';
 import {Book} from '../../../shared/interfaces/book';
 import {MatDialog} from '@angular/material/dialog';
 import {ConfirmationModalComponent} from '../../../shared/components/confirmation-modal/confirmation-modal.component';
