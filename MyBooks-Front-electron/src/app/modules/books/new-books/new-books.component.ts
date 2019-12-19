@@ -2,9 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {Author} from '../../../shared/interfaces/author';
 import {Publishers} from '../../../shared/interfaces/publishers';
 import {GlobalService} from '../../../shared/services/global.service';
-import {Books} from '../books.model';
-import {BooksService} from "../books.service";
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {BooksService} from '../books.service';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-new-books',

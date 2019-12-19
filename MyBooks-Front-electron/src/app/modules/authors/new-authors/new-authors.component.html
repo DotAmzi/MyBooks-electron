@@ -1,0 +1,12 @@
+<h3 class="mat-h2">Novo Autor</h3>
+
+<div class="container">
+  <form class="example-form column" [formGroup]="authorsForm" fxLayout="column">
+    <mat-form-field>
+      <input matInput placeholder="Nome" formControlName="name">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="saveAuthor()">Cadastrar</button>
+
+  </form>
+</div>

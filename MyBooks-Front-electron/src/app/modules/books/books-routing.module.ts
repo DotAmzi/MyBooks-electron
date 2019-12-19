@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {ListBooksComponent} from './list-books/list-books.component';
-import {NewBooksComponent} from "./new-books/new-books.component";
+import {NewBooksComponent} from './new-books/new-books.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'list'},

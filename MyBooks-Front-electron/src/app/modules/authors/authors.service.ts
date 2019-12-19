@@ -14,4 +14,18 @@ export class AuthorsService {
   ) {
   }
 
+  saveAuthor(author: Author) {
+    return this.http.post(`${environment.baseUrl}author`, author)
+      .pipe(
+        map((res: Author) => res)
+      );
+  }
+
+  deleteAuthor(id: number) {
+    return this.http.delete(`${environment.baseUrl}author/${id}`)
+      .pipe(
+        map((res: any) => res)
+      );
+  }
+
 }

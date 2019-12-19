@@ -1,0 +1,13 @@
+<mat-accordion>
+
+  <mat-expansion-panel *ngFor="let author of authors">
+    <mat-expansion-panel-header>
+      {{author.name}}
+    </mat-expansion-panel-header>
+
+    <div class="example-button-row">
+      <button mat-raised-button color="warn" (click)="removeAuthor(author.id)">Remover</button>
+    </div>
+  </mat-expansion-panel>
+
+</mat-accordion>
