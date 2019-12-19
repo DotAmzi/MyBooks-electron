@@ -1,0 +1,16 @@
+<mat-accordion>
+
+  <mat-expansion-panel *ngFor="let book of books">
+    <mat-expansion-panel-header>
+      {{book.name}}
+    </mat-expansion-panel-header>
+
+    <p>ISBN: {{book.ISBN}}</p>
+    <p>{{book.description ? book.description : 'Sem descrição'}}</p>
+
+    <div class="example-button-row">
+      <button mat-raised-button color="warn" (click)="removeBook(book.id)">Remover</button>
+    </div>
+  </mat-expansion-panel>
+
+</mat-accordion>

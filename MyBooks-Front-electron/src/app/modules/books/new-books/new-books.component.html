@@ -1,0 +1,38 @@
+<h3 class="mat-h2">Novo Livro</h3>
+
+<div class="container">
+  <form class="example-form column" [formGroup]="booksForm" fxLayout="column">
+    <mat-form-field>
+      <input matInput placeholder="Nome" formControlName="name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="ISBN" formControlName="ISBN">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Descrição" formControlName="description">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Autores</mat-label>
+      <mat-select formControlName="author_id">
+        <mat-option *ngFor="let author of authors" [value]="author.id">
+          {{author.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Editoras</mat-label>
+      <mat-select formControlName="publishing_company_id">
+        <mat-option *ngFor="let publisher of publishers" [value]="publisher.id">
+          {{publisher.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="saveBook()">Cadastrar</button>
+
+  </form>
+</div>
