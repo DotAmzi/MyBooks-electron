@@ -6,6 +6,11 @@ const routes: Routes = [
   {path: '', redirectTo: 'books', pathMatch: 'full'},
   {path: 'books', loadChildren: () => import('./modules/books/books.module').then(m => m.BooksModule)},
   {path: 'authors', loadChildren: () => import('./modules/authors/authors.module').then(m => m.AuthorsModule)},
+  {
+    path: 'publishers',
+    loadChildren: () => import('./modules/publishers/publishers.module').then(m => m.PublishersModule)
+  },
+
 ];
 
 @NgModule({

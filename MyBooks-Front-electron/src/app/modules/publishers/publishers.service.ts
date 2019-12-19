@@ -14,4 +14,18 @@ export class PublishersService {
   ) {
   }
 
+  savePublisher(publisher: Publishers) {
+    return this.http.post(`${environment.baseUrl}publisher`, publisher)
+      .pipe(
+        map((res: Publishers) => res)
+      );
+  }
+
+  deletePublisher(id: number) {
+    return this.http.delete(`${environment.baseUrl}publisher/${id}`)
+      .pipe(
+        map((res: string) => res)
+      );
+  }
+
 }

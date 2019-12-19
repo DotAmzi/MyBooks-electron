@@ -23,7 +23,7 @@ export class GlobalService {
   }
 
   getPublishers() {
-    return this.http.get(`${environment.baseUrl}author`)
+    return this.http.get(`${environment.baseUrl}publisher`)
       .pipe(
         map((res: Publishers[]) => res)
       );
